@@ -115,7 +115,6 @@ class Bot(BotBase):
             await self.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Genshin Impact SEA Tavern"))
             self.ready = True
             print("bot ready")
-            await self.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Genshin Impact SEA Tavern"))
         else:
             print("bot reconnected")
 
