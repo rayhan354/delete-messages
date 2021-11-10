@@ -39,7 +39,6 @@ class Log(Cog):
 
 	@Cog.listener()
 	async def on_message_edit(self, before, after):
-		await self.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Genshin Impact SEA Tavern"))
 		if not after.author.bot:
 			if before.content != after.content:
 				embed = Embed(title="Message edit",
@@ -57,7 +56,6 @@ class Log(Cog):
 
 	@Cog.listener()
 	async def on_message_delete(self, message):
-		await self.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Genshin Impact SEA Tavern"))
 		if not message.author.bot:
 			if not message.attachments:
 				embed = Embed(title="Message delete",
