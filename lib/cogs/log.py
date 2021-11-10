@@ -21,7 +21,7 @@ from discord import Embed
 from discord.ext.commands import Cog
 from discord.ext.commands import command
 
-messageUpdate = 907937288800051200
+messageUpdate = 907951194725576714
 
 
 class Log(Cog):
