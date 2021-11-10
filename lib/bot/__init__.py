@@ -112,7 +112,7 @@ class Bot(BotBase):
             while not self.cogs_ready.all_ready():
                 await sleep(0.5)
             
-            await self.change_presence(activity=discord.Game(name="Genshin Impact"))
+            self.change_presence(activity=discord.Game(name="Genshin Impact"))
             self.ready = True
             print("bot ready")
         else:
