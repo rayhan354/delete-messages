@@ -26,7 +26,7 @@ COGS = [path.split(os.sep)[-1][:-3] for path in glob("./lib/cogs/*.py")] #going 
 IGNORE_EXCEPTIONS = (CommandNotFound, BadArgument)
 
 #ganti semua
-Server = 879337131116470343 
+Server = 879276071479038015 
 
 class Ready(object):
     def __init__(self):
