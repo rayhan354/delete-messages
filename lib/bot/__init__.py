@@ -112,9 +112,10 @@ class Bot(BotBase):
             while not self.cogs_ready.all_ready():
                 await sleep(0.5)
             
-            self.change_presence(activity=discord.Game(name="Genshin Impact"))
+            await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Genshin Impact SEA Tavern"))
             self.ready = True
             print("bot ready")
+            await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Genshin Impact SEA Tavern"))
         else:
             print("bot reconnected")
 
